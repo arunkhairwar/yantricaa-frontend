@@ -1,0 +1,86 @@
+/* =========================
+   Industry Section
+========================= */
+.industry {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.industry h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.industry h2 span {
+  color: #ff9800;
+}
+
+.industry p {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  position: relative;
+  border-radius: 10px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card colors */
+.green {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+}
+.pink {
+  background: linear-gradient(135deg, #e84393, #fd79a8);
+}
+.yellow {
+  background: linear-gradient(135deg, #fbc531, #f39c12);
+}
+.blue {
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+}
+.orange {
+  background: linear-gradient(135deg, #e17055, #d63031);
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .industry h2 {
+    font-size: 1.6rem;
+  }
+  .card {
+    height: 180px;
+    font-size: 1rem;
+  }
+}

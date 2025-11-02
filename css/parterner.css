@@ -1,0 +1,138 @@
+/* =========================
+   Partner Ecosystem Section
+========================= */
+.partners {
+  background: linear-gradient(135deg, #020024 0%, #090979 50%, #00d4ff 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.partners h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.partners p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.logo-box {
+  background: #fff;
+  border-radius: 5px;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-box img {
+  max-width: 80%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+.logo-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo-box {
+    width: 120px;
+    height: 70px;
+  }
+  .partners h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ========================= 
+   Partners Marquee Section
+========================= */
+.partners-marquee {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.partners-marquee h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.partners-marquee p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Marquee Animation */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-content img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.marquee-content img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* Infinite loop animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners-marquee h2 {
+    font-size: 1.6rem;
+  }
+
+  .marquee-content img {
+    width: 100px;
+  }
+}

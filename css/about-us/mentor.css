@@ -1,0 +1,140 @@
+
+/* Mentors Section */
+.mentors-section {
+  padding: 80px 5%;
+  text-align: center;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* Mentor Cards Grid */
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.mentor-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mentor-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.mentor-info p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.mentor-icons a {
+  color: #333;
+  margin-right: 8px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.mentor-icons a:hover {
+  color: #0077b5;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .mentors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mentors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentor-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  background: #f3f3f3;
+  padding: 40px 5%;
+  text-align: center;
+  
+}
+
+.cta-container {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-container p {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cta-button {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #333;
+}

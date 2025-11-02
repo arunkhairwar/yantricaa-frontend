@@ -1,0 +1,112 @@
+/* ========================= 
+   Presence Worldwide Section
+========================= */
+.presence-worldwide {
+  text-align: center;
+  background: #fff;
+  color: #222;
+  padding: 4rem 2rem;
+}
+
+.presence-worldwide h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.presence-worldwide p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Map container */
+.world-map-container {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+}
+
+.world-map {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Location markers */
+.location {
+  position: absolute;
+  text-align: left;
+  transform: translate(-50%, -50%);
+}
+
+.location .dot {
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.location .label {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-left: 6px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+
+/* CTA box */
+.cta-container {
+  background: #f4f4f4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  gap: 1rem;
+}
+
+.cta-container p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.cta-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .presence-worldwide h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+}

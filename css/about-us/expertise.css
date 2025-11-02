@@ -1,0 +1,155 @@
+.expertise-section {
+  background: #262626;
+  color: #eee;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.expertise-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expertise-text {
+  flex: 1;
+  min-width: 320px;
+  padding-right: 40px;
+}
+
+.expertise-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.expertise-text h2 span {
+  color: #3ab6ff;
+}
+
+.expertise-text p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.expertise-tags button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #3ab6ff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expertise-tags button:hover {
+  background: #3ab6ff;
+  color: #111;
+}
+
+.expertise-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.expertise-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.expertise-section {
+  background: #111;
+  color: #eee;
+  padding: 80px 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+.expertise-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expertise-text {
+  flex: 1;
+  min-width: 320px;
+  padding-right: 40px;
+}
+
+.expertise-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.expertise-text h2 span {
+  color: #3ab6ff;
+}
+
+.expertise-text p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.expertise-tags button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #3ab6ff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expertise-tags button:hover {
+  background: #3ab6ff;
+  color: #111;
+}
+
+.expertise-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.expertise-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* moble responsive */ 
+@media (max-width: 768px) {
+  .expertise-content {
+    flex-direction: column;
+  }
+
+  .expertise-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .expertise-tags {
+    justify-content: center;
+  }
+
+  .expertise-section {
+    text-align: center;
+  }
+}

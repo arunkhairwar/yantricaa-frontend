@@ -1,0 +1,99 @@
+.career-section {
+  padding: 80px 5%;
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.career-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.job-alert-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.job-alert-btn:hover {
+  background: #e8e8e8;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.career-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.career-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.career-card h3::after {
+  content: "↗";
+  position: absolute;
+  right: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.career-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.career-card ul {
+  margin: 8px 0 20px;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.apply-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #444;
+}

@@ -1,13 +1,9 @@
 .tech-section {
   padding: 80px 5%;
-  background-image: url("assets/images/bg.jpg"); /* ← forward slashes */
-  background-size: cover;
-  background-position: center;
+  background: #0d0f1a;  /* dark background, adjust to your theme */
   color: #f0f4ff;
   font-family: "Poppins", sans-serif;
-  border: 2px solid red;
 }
-
 
 .tech-title {
   font-size: 2rem;

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/career/cardgrid.css" />
+    <link rel="stylesheet" href="/css/career/form.css" />
 
     <link
       rel="stylesheet"
@@ -17,14 +18,14 @@
     <header class="header">
       <nav class="navbar">
         <div class="logo">
-          <span class="logo-icon">⚡</span>
+           <img src="/assets/images/yantrickaaLogo.png" alt="logo" class="logo-icon">
           <h2>Yantrickaa</h2>
         </div>
         <ul class="nav-links">
           <li><a href="/pages/about.html">About us</a></li>
           <li><a href="/pages/product.html">Products</a></li>
           <li><a href="/pages/service.html">Services</a></li>
-          <li><a href="/pages/career.html" class="contact-btn">Career</a></li>
+          <li><a href="/pages/career.html" >Career</a></li>
         </ul>
       </nav>
 
@@ -37,7 +38,7 @@
         <a href="#" class="btn">About Us</a>
       </div>
     </header>
-    <main>
+    <main >
       <section class="career-section">
         <div class="career-header">
           <h2>Current Openings</h2>
@@ -175,6 +176,107 @@
             <button class="apply-btn">Apply →</button>
           </div>
         </div>
+      </section>
+      <hr />
+      <section class="career-apply-section">
+        <div class="job-title">
+          <h2>Full Stack Web Developer at Yantrikaa <span>↗</span></h2>
+          <div class="job-tags">
+            <span>Experience: 0-2 Years.</span>
+            <span>Location: Nagpur, India. (WFH)</span>
+            <span>Joining: Immediate</span>
+          </div>
+        </div>
+
+        <div class="job-description">
+          <p><strong>Key Skills:</strong> TypeScript, JavaScript, NodeJS.</p>
+          <p><strong>Description:</strong></p>
+          <ul>
+            <li>
+              Works with QA CoE team on defining the QA framework and its
+              components
+            </li>
+            <li>
+              Provides the means and the measures for testing all aspects of the
+              product – both functionally and technically – as well as in terms
+              of usability and user experience – to meet all the requirements of
+              the solution.
+            </li>
+          </ul>
+        </div>
+
+        <form class="career-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="name@gmail.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Contact No</label>
+              <input type="text" placeholder="Number 1" />
+            </div>
+            <div class="form-group">
+              <label>Whatsapp No</label>
+              <input type="text" placeholder="Number 2" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Education</label>
+              <select>
+                <option>UnderGrad / MBA</option>
+                <option>BTech</option>
+                <option>MTech</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Yrs of Exp</label>
+              <select>
+                <option>Fresher / 2+ Years exp</option>
+                <option>3-5 Years</option>
+                <option>5+ Years</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Resume/CV</label>
+              <input type="file" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Note</label>
+              <textarea placeholder="Upload your Resume"></textarea>
+            </div>
+          </div>
+
+          <div class="form-row checkbox-row">
+            <input type="checkbox" id="agree" />
+            <label for="agree"
+              >I have read and Agree to all the terms and conditions.</label
+            >
+          </div>
+
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">

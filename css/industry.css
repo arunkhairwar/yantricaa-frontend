@@ -1,86 +1,71 @@
-/* =========================
-   Industry Section
-========================= */
-.industry {
-  background: #fff;
-  color: #000;
+.industry-section {
+  font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 60px 5%;
+  background: #fff;
 }
 
-.industry h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.industry-heading h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
 }
 
-.industry h2 span {
-  color: #ff9800;
+.industry-heading h2 span {
+  color: #F46060;
 }
 
-.industry p {
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
+.industry-heading p {
+  font-size: 15px;
+  color: #555;
+  margin-top: 8px;
+  margin-bottom: 40px;
 }
 
-/* Grid layout */
 .industry-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  width: 90%;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
 }
 
-/* Cards */
-.card {
+.industry-card {
   position: relative;
-  border-radius: 10px;
-  height: 220px;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.industry-card h3 {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-width: 130px;
+  line-height: 1.2;
 }
 
-/* Card colors */
-.green {
-  background: linear-gradient(135deg, #00b894, #00cec9);
-}
-.pink {
-  background: linear-gradient(135deg, #e84393, #fd79a8);
-}
-.yellow {
-  background: linear-gradient(135deg, #fbc531, #f39c12);
-}
-.blue {
-  background: linear-gradient(135deg, #0984e3, #74b9ff);
-}
-.orange {
-  background: linear-gradient(135deg, #e17055, #d63031);
+.industry-card img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
-/* Hover effect */
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive text */
 @media (max-width: 768px) {
-  .industry h2 {
-    font-size: 1.6rem;
+  .industry-card {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-  .card {
-    height: 180px;
-    font-size: 1rem;
+
+  .industry-card h3 {
+    max-width: none;
+  }
+
+  .industry-card img {
+    margin-top: 15px;
   }
 }

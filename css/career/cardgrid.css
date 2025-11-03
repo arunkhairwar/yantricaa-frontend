@@ -1,6 +1,6 @@
 .career-section {
   padding: 80px 5%;
-  background: #f7f7f7;
+  background: #FFFFFF;
   font-family: "Poppins", sans-serif;
   color: #222;
 }
@@ -39,7 +39,7 @@
 }
 
 .career-card {
-  background: #fff;
+  background: #E6E6E6;
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

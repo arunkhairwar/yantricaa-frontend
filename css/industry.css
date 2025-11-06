@@ -12,7 +12,7 @@
 }
 
 .industry-heading h2 span {
-  color: #F46060;
+  color: #f46060;
 }
 
 .industry-heading p {
@@ -33,7 +33,6 @@
   color: #fff;
   border-radius: 4px;
   overflow: hidden;
-  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,17 +40,22 @@
 }
 
 .industry-card h3 {
+  position: absolute;
   font-size: 20px;
   font-weight: 600;
-  text-align: left;
+  bottom: 0.8rem;
+  left: 0.5rem;
   max-width: 130px;
   line-height: 1.2;
+  word-break: break-word; 
 }
 
 .industry-card img {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
+  position: absolute;
+  right: 0;
 }
 
 @media (max-width: 768px) {

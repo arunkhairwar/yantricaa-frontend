@@ -46,7 +46,7 @@
   color: #555;
   margin-top: 10px;
   margin-bottom: 15px;
-  word-break: break-word;   /* ✅ Keeps long text inside card */
+  word-break: break-word; /* ✅ Keeps long text inside card */
   overflow-wrap: break-word; /* ✅ Prevents overflow */
 }
 
@@ -83,7 +83,6 @@
   color: #777;
   margin: 0;
 }
-
 
 /* ============================================Career Section ============================================================ */
 .career-section {
@@ -151,4 +150,16 @@
   width: 400px;
   max-width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 375px) {
+  .buttons {
+    flex-direction: column;
+  }
+  
+}
+@media (max-width:400px) {
+  .career-section {
+    padding: 0 10%;
+  }
 }

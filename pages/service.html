@@ -15,33 +15,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="service-page">
     <header class="header">
       <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
         <div class="logo">
-          <img
-            src="/assets/images/logo.png"
-            alt="logo"
-            class="logo-icon"
-          />
+          <img src="../assets/images/logo.png" alt="logo" class="logo-icon" />
           <h2>Yantrickaa</h2>
         </div>
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About us</a></li>
-          <li><a href="./product.html">Products</a></li>
-          <li><a href="./service.html">Services</a></li>
-          <li><a href="./career.html">Career</a></li>
+
+        <ul class="nav-links" id="sidebar">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
         </ul>
+        <div class="sidebar" id="sidebar">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Career</a></li>
+        </div>
       </nav>
 
       <div class="hero-content">
-        <h1>Innovative Software Solutions for Modern Businesses</h1>
+        <h1>Our Service</h1>
         <p>
-          Everything you need to access and manage the Society — in one web
-          interface.
+          We offer a comprehensive range of technology services to help your
+          business thrive in the digital age.
         </p>
-        <a href="#" class="btn">About Us</a>
+        <a href="#" class="btn">Explore more</a>
       </div>
     </header>
 
@@ -401,5 +407,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

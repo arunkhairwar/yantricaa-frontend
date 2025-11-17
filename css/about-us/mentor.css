@@ -1,11 +1,20 @@
-
 /* Mentors Section */
 .mentors-section {
-  padding: 80px 5%;
-  text-align: center;
+  padding: 1rem 10%;
   background: #fff;
 }
 
+.mentors-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container .text-container {
+  width: 100%;
+  text-align: left;
+}
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -16,7 +25,6 @@
 .section-subtitle {
   color: #555;
   font-size: 1rem;
-  margin-bottom: 50px;
 }
 
 /* Mentor Cards Grid */
@@ -100,7 +108,7 @@
   }
 }
 
-/* CTA Section */
+/* CTA Section
 .cta-section {
   background: #f3f3f3;
   padding: 40px 5%;
@@ -137,4 +145,4 @@
 
 .cta-button:hover {
   background: #333;
-}
+} */

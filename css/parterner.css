@@ -2,12 +2,18 @@
    Partner Ecosystem Section
 ========================= */
 .partners {
-  background: linear-gradient(135deg, #020024 0%, #090979 50%, #00d4ff 100%);
+  /* background: linear-gradient(135deg, #020024 0%, #090979 50%, #00d4ff 100%); */
+  background: url("../assets/images/home/partener.png") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 60px 5%;
 }
-
+.partner-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
 
 .partners h2 {
   font-size: 2rem;
@@ -18,16 +24,12 @@
 .partners p {
   font-size: 1rem;
   opacity: 0.85;
-  margin-bottom: 2.5rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .partner-logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 1.5rem;
 }
 

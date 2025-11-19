@@ -1,4 +1,3 @@
-
 // ====================== Toggle menu ========================
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -53,12 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // ====================== Active tab highlight ========================
 const currentPath = window.location.pathname.split("/").pop();
 const links = document.querySelectorAll(".nav-links  a");
 console.log(currentPath, links);
 links.forEach((link) => {
+  if (currentPath.trim() === "") return;
   if (link.getAttribute("href").includes(currentPath)) {
     link.classList.add("active-tab");
   }

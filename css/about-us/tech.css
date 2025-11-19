@@ -1,6 +1,7 @@
 .tech-section {
   padding: 80px 5%;
-  background: #0d0f1a;  /* dark background, adjust to your theme */
+  background: url("../../assets/images/service/technologyUsed.png") center/cover
+    no-repeat;
   color: #f0f4ff;
   font-family: "Poppins", sans-serif;
 }
@@ -22,17 +23,27 @@
 }
 
 .tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 25px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
   align-items: center;
   justify-items: center;
 }
 
+.tech-item {
+  height:4rem;
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tech-item img {
   max-width: 80px;
-  height: auto;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 

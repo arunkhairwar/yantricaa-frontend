@@ -27,8 +27,10 @@
   font-weight: 600;
 }
 
-.expertise-text h2 span {
-  color: #3ab6ff;
+.expertise-text h2 {
+  background: linear-gradient(90deg, #135090, #93BEDE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .expertise-text p {

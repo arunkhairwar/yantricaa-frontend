@@ -1,4 +1,9 @@
 /* Reset */
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +30,8 @@ body {
   background: url("../assets/images/about/headerBg.png") center/cover no-repeat;
 }
 .service-page .header {
-  background: url("../assets/images/service/headerBg.png") center/cover no-repeat;
+  background: url("../assets/images/service/headerBg.png") center/cover
+    no-repeat;
   height: 70vh;
 }
 .product-page .header {

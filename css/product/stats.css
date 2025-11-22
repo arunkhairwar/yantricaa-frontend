@@ -1,0 +1,74 @@
+.stats-section {
+  padding: 40px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-card {
+  width: 100%;
+  background: linear-gradient(180deg, #171717, #250070, #171717);
+  padding: 40px 50px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  gap: 2.5rem;
+}
+
+.stat-item {
+  text-align: left;
+}
+
+.stat-item h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.stat-item p {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.stats-divider {
+  width: 2px;
+  height: 90%;
+  background: white;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .stats-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .stats-divider {
+    width: 90%;
+    height: 2px;
+    background: white;
+  }
+
+  .stat-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .stat-item {
+    width: 100%;
+  }
+
+  .stat-item h2 {
+    font-size: 38px;
+  }
+
+  .stat-item p {
+    font-size: 18px;
+  }
+}

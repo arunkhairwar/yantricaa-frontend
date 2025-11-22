@@ -13,7 +13,6 @@ html {
 
 body {
   color: #fff;
-  background-color: #0f0f0f;
 }
 
 /* Header Section */
@@ -146,10 +145,10 @@ body {
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+/* .sidebar a:hover {
   background: #00bcd4;
   color: #fff;
-}
+} */
 
 .sidebar.open {
   left: 0;
@@ -204,6 +203,11 @@ body {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.transparent-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 9px;
 }
 
 .btn:hover {

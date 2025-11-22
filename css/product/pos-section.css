@@ -1,0 +1,129 @@
+.pos-section {
+  padding: 40px 5%;
+  color: black;
+}
+
+.pos-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+main .divider {
+  width: 90%;
+  height: 3px;
+  margin: 0px 5%;
+  background-color: #5e5e5e;
+}
+
+.pos-header .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pos-left-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.pos-left-text h4 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.highlight-box {
+  border: 2px solid #c0c0c0;
+  padding: clamp(6px, 1.5vw, 14px) clamp(8px, 2vw, 20px);
+  border-radius: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight-box h3 {
+  font-size: clamp(2.5rem, 3vw, 24px);
+  font-weight: 400;
+  color: #0d5000;
+  margin: 0;
+}
+.highlight-box span {
+  color: #178800;
+  font-weight: bold;
+}
+
+.pos-image img {
+  width: 500px;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: fill;
+}
+
+.text-container {
+  margin-top: 2rem;
+}
+
+.text-container p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* FEATURES */
+.features-title {
+  font-size: 22px;
+  margin: 25px 0 15px;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.feature {
+  display: block;
+  padding: 12px 18px;
+  background: #d4f5d9;
+  color: #1a701d;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+#db-feature {
+  background: linear-gradient(90deg, #ffdaad, #d1d7ff);
+  color: #0c0148;
+}
+#feature-portal {
+  background: #000;
+  color: #fff;
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .highlight-box {
+    border: 2px solid #c0c0c0;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pos-header {
+    flex-direction: column;
+  }
+  .pos-header .left {
+    gap: 1.5rem;
+  }
+
+  .pos-image img {
+    width: 100%;
+  }
+}

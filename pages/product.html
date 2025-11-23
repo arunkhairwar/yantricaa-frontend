@@ -337,22 +337,49 @@
             </p>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Type Your Full Name" required />
-            <input type="email" placeholder="Type Your Email" required />
-            <select>
+          <form
+            action="https://formsubmit.co/ee59437ddc10992cbd1b6cd485e05ffe"
+            method="POST"
+            enctype="multipart/form-data"
+            class="contact-form"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New project descussion Application"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <input
+              name="FullName"
+              type="text"
+              placeholder="Type Your Full Name"
+              required
+            />
+            <input
+              name="Email"
+              type="email"
+              placeholder="Type Your Email"
+              required
+            />
+            <select name="Country" required>
               <option>Select Your Country</option>
               <option>India</option>
               <option>USA</option>
               <option>UK</option>
             </select>
-            <select>
+            <select name="QueryType" required>
               <option>Select Query Type</option>
               <option>Development</option>
               <option>Design</option>
               <option>Consultation</option>
             </select>
-            <textarea placeholder="Type Description"></textarea>
+            <textarea
+              name="Description"
+              placeholder="Type Description"
+              required
+            ></textarea>
             <button type="submit">Submit</button>
           </form>
         </div>

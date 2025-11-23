@@ -3,7 +3,7 @@
   padding: 80px 5%;
   font-family: "Poppins", sans-serif;
   color: #111;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .job-title h2 {
@@ -70,7 +70,9 @@ label {
   color: #333;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 8px 10px;
   border: 1px solid #bbb;
@@ -85,8 +87,9 @@ textarea {
 }
 
 .checkbox-row {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 8px;
   margin-bottom: 10px;
 }

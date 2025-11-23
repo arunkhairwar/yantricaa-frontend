@@ -178,6 +178,40 @@ body {
   margin: 0 auto;
 }
 
+/* ======================== CAREER PAGE SEARCH BAR STYLES ====================== */
+.search-bar {
+  margin-top: 2rem;
+  max-width: 600px;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  padding: 8px;
+  border-radius: 8px;
+}
+.search-bar input {
+  outline: none;
+  border: none;
+  padding: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+.search-bar button {
+  background: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+  color: #fff;
+  border: none;
+  padding: 3px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .hero-content h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -215,8 +249,9 @@ body {
   color: #fff;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 768px) {
+  /* ===== Responsive ===== */
+
   .nav-links {
     display: none;
   }
@@ -236,9 +271,6 @@ body {
     order: 2;
     margin-left: auto;
   }
-}
-
-@media (max-width: 768px) {
   .nav-links.open {
     display: flex !important;
     flex-direction: column;
@@ -262,5 +294,21 @@ body {
 
   .nav-links.open a:hover {
     background: #00bcd4;
+  }
+
+  /* ====================== CAREER PAGE SEARCH BAR ADJUSTMENTS ====================== */
+  .search-bar {
+    background-color: transparent;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .search-bar input {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  .search-bar button {
+    justify-content: center;
+    padding: 8px 12px;
+    gap: 8px;
   }
 }

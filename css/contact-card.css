@@ -1,0 +1,81 @@
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background: linear-gradient(rgba(10, 12, 30, 0.95), rgba(10, 12, 30, 0.95)),
+    url("assets/wave-lines.svg");
+  background: url("../../assets/images/service/contactCardBg.png") center/cover
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: top;
+}
+
+.contact-text h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.contact-text p {
+  font-size: 0.95rem;
+  color: #d0d3e0;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #242b7c;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3a49c4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

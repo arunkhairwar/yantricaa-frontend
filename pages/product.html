@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/product/product-card.css" />
     <link rel="stylesheet" href="../css/product/stats.css" />
-    <link rel="stylesheet" href="../css/product/pos-section.css" />
+    <link rel="stylesheet" href="../css/product/info-section.css" />
+    <link rel="stylesheet" href="../css/contact-card.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap");
+    </style>
   </head>
   <body class="product-page">
     <header class="header">
@@ -46,7 +50,7 @@
           We offer a comprehensive range of technology services to help your
           business thrive in the digital age.
         </p>
-        <a href="#" class="btn transparent-btn">View video</a>
+        <a href="upcoming.html" class="btn transparent-btn">View video</a>
       </div>
     </header>
 
@@ -133,10 +137,10 @@
       </section>
 
       <!-- ================== Pos Section ================== -->
-      <section class="pos-section">
-        <div class="pos-header">
+      <section class="info-section">
+        <div class="info-header">
           <div class="left">
-            <div class="pos-left-text">
+            <div class="info-left-text">
               <h2>YantrikaPOS</h2>
               <h4>YantrikaPOS - The Future of<br />Point of Sale System.</h4>
             </div>
@@ -144,7 +148,7 @@
               <h3>Yantrika<span>POS</span></h3>
             </div>
           </div>
-          <div class="pos-image">
+          <div class="info-image">
             <img
               src="../assets/images/product/posInfo.png"
               alt="YantrikaPOS System"
@@ -186,20 +190,21 @@
       <div class="divider"></div>
       <!-- ================== DB Section ================== -->
 
-      <section class="pos-section">
-        <div class="pos-header">
+      <section class="info-section">
+        <div class="info-header">
           <div class="left">
-            <div class="pos-left-text">
+            <div class="info-left-text">
               <h2>YantrikaDB</h2>
               <h4>YantrikaDB - Society<br />Management & Core Banking</h4>
             </div>
-            <div class="highlight-box">
+            <div class="highlight-box highlight-box-with-logo">
+              <img src="../assets/images/product/db-logo.png" alt="db-logo" />
               <h3 style="color: #333dff; font-weight: 700">
                 Yantrika<span style="color: #fb7500">DB</span>
               </h3>
             </div>
           </div>
-          <div class="pos-image">
+          <div class="info-image">
             <img
               src="../assets/images/product/DBPrensenting.png"
               alt="YantrikaPOS System"
@@ -250,21 +255,28 @@
 
       <!-- ================== Portal Section ================== -->
 
-      <section class="pos-section">
-        <div class="pos-header">
+      <section class="info-section">
+        <div class="info-header">
           <div class="left">
-            <div class="pos-left-text">
+            <div class="info-left-text">
               <h2>Portal</h2>
               <h4>
                 YantrikaPOS - The Future<br />
                 Of Point of Sale System.
               </h4>
             </div>
-            <div class="highlight-box">
-              <h3>Yantrika<span>POS</span></h3>
+            <div class="highlight-box highlight-box-with-logo">
+              <img
+                style="width: 15%"
+                src="../assets/images/product/portal-logo.png"
+                alt="logo"
+              />
+              <h3 style="color: #000; font-family: 'Ysabeau', sans-serif">
+                Portal
+              </h3>
             </div>
           </div>
-          <div class="pos-image">
+          <div class="info-image">
             <img
               src="../assets/images/product/posInfo.png"
               alt="YantrikaPOS System"
@@ -313,6 +325,36 @@
               >Budgeting and Analytics</span
             >
           </div>
+        </div>
+      </section>
+      <section style="padding: 40px 5%">
+        <div class="contact-card">
+          <div class="contact-text">
+            <h3>Ready to discuss your project?</h3>
+            <p>
+              Contact our team to schedule a consultation and discover how our
+              services can help your business thrive.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Type Your Full Name" required />
+            <input type="email" placeholder="Type Your Email" required />
+            <select>
+              <option>Select Your Country</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+            <select>
+              <option>Select Query Type</option>
+              <option>Development</option>
+              <option>Design</option>
+              <option>Consultation</option>
+            </select>
+            <textarea placeholder="Type Description"></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </section>
     </main>

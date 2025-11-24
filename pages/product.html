@@ -340,7 +340,6 @@
           <form
             action="https://formsubmit.co/ee59437ddc10992cbd1b6cd485e05ffe"
             method="POST"
-            enctype="multipart/form-data"
             class="contact-form"
           >
             <input
@@ -350,6 +349,11 @@
             />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://arunkhairwar.github.io/yantricaa-frontend/"
+            />
 
             <input
               name="FullName"
@@ -363,13 +367,12 @@
               placeholder="Type Your Email"
               required
             />
-            <select name="Country" required>
-              <option>Select Your Country</option>
+            <select name="Country">
               <option>India</option>
               <option>USA</option>
               <option>UK</option>
             </select>
-            <select name="QueryType" required>
+            <select name="QueryType"  >
               <option>Select Query Type</option>
               <option>Development</option>
               <option>Design</option>

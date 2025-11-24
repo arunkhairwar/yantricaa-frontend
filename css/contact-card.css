@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  background: linear-gradient(rgba(10, 12, 30, 0.95), rgba(10, 12, 30, 0.95)),
-    url("assets/wave-lines.svg");
-  background: url("../../assets/images/service/contactCardBg.png") center/cover
+  /* background: linear-gradient(rgba(10, 12, 30, 0.95), rgba(10, 12, 30, 0.95)),
+    url("assets/wave-lines.svg"); */
+  background: url("../assets/images/service/contactCardBg.png") center/cover
     no-repeat;
   background-size: cover;
   background-position: center;

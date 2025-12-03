@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 768px) {
+  .industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .industry-card {
     flex-direction: column;
     justify-content: center;
@@ -76,6 +80,22 @@
   }
 
   .industry-card img {
-    margin-top: 15px;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    /* position: absolute; */
+    bottom: 0;
+  }
+
+  .industry-card h3 {
+    text-align: center;
+    top: 0.8rem;
+    left: 0.5rem;
+  }
+  #finance-industry img {
+    max-width: 100%;
+    max-height:50%;
+    object-fit: contain;
+    bottom: 0;
   }
 }

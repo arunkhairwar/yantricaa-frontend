@@ -64,6 +64,12 @@
   .partners h2 {
     font-size: 1.6rem;
   }
+  .partners {
+    align-items: center;
+  }
+  .partner-logos {
+    justify-content: center;
+  }
 }
 
 /* ========================= 

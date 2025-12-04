@@ -50,27 +50,35 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
     }
   });
+
+  // ===================== handle logo click ========================
+
+  const logo = document.querySelector(".logo");
+
+  logo.addEventListener("click", () => {
+    window.location.href = "/";
+
+    console.log("Logo clicked, navigating to home page.");
+  });
+
+  // ====================== Active tab highlight ========================
+
+  const currentPath = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav-links  a");
+  links.forEach((link) => {
+    if (currentPath.trim() === "") return;
+    if (link.getAttribute("href").includes(currentPath)) {
+      link.classList.add("active-tab");
+    }
+  });
+
+  // ====================== Smooth scroll for internal links ========================
+  // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  //   anchor.addEventListener("click", function (e) {
+  //     e.preventDefault();
+  //     const target = document.querySelector(this.getAttribute("href"));
+  //     if (target) {
+  //       target.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   });
 });
-
-// ====================== Active tab highlight ========================
-const currentPath = window.location.pathname.split("/").pop();
-const links = document.querySelectorAll(".nav-links  a");
-console.log(currentPath, links);
-links.forEach((link) => {
-  if (currentPath.trim() === "") return;
-  if (link.getAttribute("href").includes(currentPath)) {
-    link.classList.add("active-tab");
-  }
-});
-
-// ====================== Smooth scroll for internal links ========================
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const target = document.querySelector(this.getAttribute("href"));
-//     if (target) {
-//       target.scrollIntoView({ behavior: "smooth" });
-//     }
-//   });
-// });
-

@@ -244,10 +244,10 @@ body {
   border-radius: 9px;
 }
 
-.btn:hover {
+/* .btn:hover {
   background: #00bcd4;
   color: #fff;
-}
+} */
 
 @media (max-width: 768px) {
   /* ===== Responsive ===== */
@@ -292,9 +292,9 @@ body {
     padding: 0.7rem 1.5rem;
   }
 
-  .nav-links.open a:hover {
+  /* .nav-links.open a:hover {
     background: #00bcd4;
-  }
+  } */
 
   /* ====================== CAREER PAGE SEARCH BAR ADJUSTMENTS ====================== */
   .search-bar {

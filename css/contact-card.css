@@ -73,9 +73,12 @@
   .contact-card {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding: 1rem 2rem;
   }
 
   .contact-form {
+    min-width: 100px;
     width: 100%;
   }
 }

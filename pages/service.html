@@ -439,11 +439,8 @@
               placeholder="Type Your Email"
               required
             />
-            <select name="Country" required>
-              <option>Select Your Country</option>
-              <option>India</option>
-              <option>USA</option>
-              <option>UK</option>
+            <select id="country" name="Country" required>
+              <option value="">Select country</option>
             </select>
             <select name="QueryType" required>
               <option>Select Query Type</option>
@@ -472,15 +469,16 @@
         <div class="footer-links">
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="../index.html#partners">Partners</a></li>
+            <!-- <li><a href="../index.html#partners">Partners</a></li> -->
+
             <li><a href="product.html">Products</a></li>
             <li><a href="service.html">Services</a></li>
           </ul>
           <ul>
             <li><a href="career.html">Careers</a></li>
             <li><a href="upcoming.html">Blogs</a></li>
-            <li><a href="about.html#mentors">Mentors</a></li>
-            <li><a href="upcoming.html">CSR</a></li>
+            <!-- <li><a href="about.html#mentors">Mentors</a></li> -->
+            <li><a href="https://siaicon.com" target="_blank">CSR</a></li>
           </ul>
         </div>
 
@@ -515,12 +513,13 @@
 
             <div class="social-links">
               <span>Follow us</span>
+              <a href="mailto:contact.dealintra@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
               <a target="_blank" href="https://www.linkedin.com/"
                 ><i class="fab fa-linkedin"></i
               ></a>
-              <a target="_blank" href="https://www.facebook.com/"
-                ><i class="fab fa-facebook"></i
-              ></a>
+
               <a target="_blank" href="https://www.x.com/"
                 ><i class="fab fa-x-twitter"></i
               ></a>
@@ -560,5 +559,6 @@
     <div class="overlay" id="overlay"></div>
     <script src="../js/service.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/fetchCountry.js"></script>
   </body>
 </html>

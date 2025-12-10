@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap");
     </style>
@@ -347,7 +348,7 @@
           </div>
 
           <form
-            action="https://formsubmit.co/ee59437ddc10992cbd1b6cd485e05ffe"
+            action="https://formsubmit.com/ee59437ddc10992cbd1b6cd485e05ffe"
             method="POST"
             class="contact-form"
           >
@@ -376,11 +377,10 @@
               placeholder="Type Your Email"
               required
             />
-            <select name="Country">
-              <option>India</option>
-              <option>USA</option>
-              <option>UK</option>
+            <select id="country" name="Country" required>
+              <option value="">Select country</option>
             </select>
+
             <select name="QueryType">
               <option>Select Query Type</option>
               <option>Development</option>
@@ -408,15 +408,16 @@
         <div class="footer-links">
           <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="../index.html#partners">Partners</a></li>
+            <!-- <li><a href="../index.html#partners">Partners</a></li> -->
+
             <li><a href="product.html">Products</a></li>
             <li><a href="service.html">Services</a></li>
           </ul>
           <ul>
             <li><a href="career.html">Careers</a></li>
             <li><a href="upcoming.html">Blogs</a></li>
-            <li><a href="about.html#mentors">Mentors</a></li>
-            <li><a href="upcoming.html">CSR</a></li>
+            <!-- <li><a href="about.html#mentors">Mentors</a></li> -->
+            <li><a href="https://siaicon.com" target="_blank">CSR</a></li>
           </ul>
         </div>
 
@@ -454,12 +455,13 @@
 
             <div class="social-links">
               <span>Follow us</span>
+              <a href="mailto:contact.dealintra@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
               <a target="_blank" href="https://www.linkedin.com/"
                 ><i class="fab fa-linkedin"></i
               ></a>
-              <a target="_blank" href="https://www.facebook.com/"
-                ><i class="fab fa-facebook"></i
-              ></a>
+
               <a target="_blank" href="https://www.x.com/"
                 ><i class="fab fa-x-twitter"></i
               ></a>
@@ -497,7 +499,10 @@
       </div>
     </footer>
     <div class="overlay" id="overlay"></div>
+
     <script src="../js/statsAnimation.js"></script>
+    <script src="../js/fetchCountry.js"></script>
+
     <script src="../js/main.js"></script>
   </body>
 </html>

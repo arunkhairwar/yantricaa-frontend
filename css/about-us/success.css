@@ -165,4 +165,7 @@
   .contact-form {
     width: 100%;
   }
+  .contact-card {
+    padding: 1rem 5%;
+  }
 }

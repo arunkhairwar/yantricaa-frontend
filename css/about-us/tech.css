@@ -33,7 +33,7 @@
 }
 
 .tech-item {
-  height:4rem;
+  height: 4rem;
   background-color: white;
   padding: 0.5rem 0.8rem;
   display: flex;
@@ -60,7 +60,10 @@
   .tech-subtitle {
     font-size: 0.9rem;
   }
+  .tech-item {
+    border-radius: 0.5rem;
+  }
   .tech-item img {
-    max-width: 60px;
+    max-width: 70px;
   }
 }

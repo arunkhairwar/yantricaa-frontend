@@ -28,7 +28,7 @@
 }
 
 .expertise-text h2 {
-  background: linear-gradient(90deg, #135090, #93BEDE);
+  background: linear-gradient(90deg, #135090, #93bede);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,6 +96,7 @@
   }
 
   .expertise-image {
+    display: none; /* hide image on mobile */
     width: 100%;
     height: auto; /* scale proportionally on mobile */
     margin-top: 20px;

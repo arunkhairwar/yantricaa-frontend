@@ -28,41 +28,20 @@
   position: relative;
   display: inline-block;
   max-width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .world-map {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 6px;
 }
 
 /* Location markers */
-.location {
-  position: absolute;
-  text-align: left;
-  transform: translate(-50%, -50%);
-}
 
-.location .dot {
-  width: 12px;
-  height: 12px;
-  background: red;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-}
-
-.location .label {
-  color: #000;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  margin-left: 6px;
-  border-bottom: 2px solid red;
-  display: inline-block;
-}
-
-.cta-container-parent {
+/* .cta-container-parent {
   background: #cecece;
   margin-top: 3rem;
   padding: 0;
@@ -74,7 +53,7 @@
   border: 1px solid #000;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 /* CTA box */
 .cta-container {
   width: 100%;
@@ -120,5 +99,15 @@
 
   .cta-btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .presence-worldwide {
+    padding: 3rem 1rem;
+  }
+  .world-map-container,
+  .world-map {
+    max-width: 100%;
   }
 }

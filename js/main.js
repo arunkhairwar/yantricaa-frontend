@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const logo = document.querySelector(".logo");
 
   logo.addEventListener("click", () => {
-    window.location.href = "../";
+    window.location.href = "https://arunkhairwar.github.io/yantricaa-frontend/";
 
     console.log("Logo clicked, navigating to home page.");
   });

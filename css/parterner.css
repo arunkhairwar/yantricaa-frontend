@@ -58,9 +58,10 @@
 /* Responsive */
 @media (max-width: 768px) {
   .logo-box {
-    width: 120px;
-    height: 70px;
+    width: 80px;
+    height: 50px;
   }
+
   .partners h2 {
     font-size: 1.6rem;
   }

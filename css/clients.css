@@ -85,6 +85,41 @@
   margin: 0;
 }
 
+.swipe-hint {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+  display: none; /* hidden by default */
+}
+
+/* Make testimonial cards horizontally scrollable on small screens */
+@media (max-width: 600px) {
+  .testimonial-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+
+  .testimonial-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    max-width: 280px; /* Width of each card in slider */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .swipe-hint {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+}
+
 /* ============================================Career Section ============================================================ */
 .career-section {
   display: flex;
@@ -157,9 +192,8 @@
   .buttons {
     flex-direction: column;
   }
-  
 }
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .career-section {
     padding: 0 10%;
   }
